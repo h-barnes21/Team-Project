@@ -1,0 +1,284 @@
+.left {
+	
+position: relative;
+    
+	bottom: -100px;
+
+    	left: -40%;
+}
+
+
+.right{
+
+	position: relative;
+    
+	bottom: -100px;
+    
+	left: 0;
+}
+	
+
+* {
+margin: 0;
+    
+	padding: 0;}
+
+  
+/* This is the big 'ol logo on the left side */
+  
+nav .logo a {
+
+	color: black;
+    
+	font-size: 25px;
+    
+	/* Give it some space on the left */
+    
+	margin-left: 10px;
+    
+	text-decoration: none;
+}
+
+  
+/* These are the fancy clickable links on the left */
+  
+nav .nav-links a {
+ 
+	/* Picked this color from https://material.io/color */
+    
+	background-color: white;
+
+    
+	/* Need to show no shadows before animating them in! */
+    
+	box-shadow: 0 0 0 transparent;
+
+    
+	/* Set font color to white */
+    
+	color: black;
+    
+	/* Give us some padding between word and bounds */
+    
+	padding: 0 8px;
+
+    
+	/* Remove those silly underlines! */
+    
+	text-decoration: none;
+
+    
+	/* Allow us to animate any properties! */
+    
+	transition: all 0.2s ease-out;
+}
+
+  
+nav .nav-links a:hover {
+    
+	/* New, lighter background color */
+    
+	background-color: red;
+
+    
+	/* Just a touch of shadow */
+    
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    
+	/* Make it pop out! This doesn't move neighboring elements */
+    
+	transform: scale(1.1, 1.1);
+}
+
+  
+/* This holds our list of nav links */
+  
+.nav-links {
+   
+	/* Give it some space on the right */
+    
+	margin-right: 10px;
+}
+
+  
+/* This contains each nav link a tag */
+  
+nav li {
+    
+	/* Each nav link will take up the entire nav height */
+    
+	height: 48px;
+}
+
+  
+/* The list of nav links */
+  
+nav ul {
+    
+	/* The nav list shouldn't look like a list! */
+    
+	list-style: none;
+}
+
+  
+/* The entire navbar itself */
+  
+nav {
+    
+	background-color: white;
+    
+	height: 48px;
+}
+
+  
+body {
+    
+	background-color: #eee;
+}
+
+  
+.content {
+    
+	background-color: #fff;
+    
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    
+	margin: 20px auto;
+    width: 800px;
+  }
+
+  
+.content ul {
+    
+	margin: 10px 20px;
+  }
+
+
+
+
+
+nav, nav ul, nav li, nav .logo, nav .logo a, nav .nav-links a {
+	
+display: flex;
+}
+
+
+nav .logo a, nav .nav-links a {
+
+	align-items: center;
+}
+
+
+nav {
+
+	justify-content: space-between;
+}
+
+
+
+figcaption{
+    
+	display: flex;
+    
+	justify-content: center;
+    
+	align-content: center;
+}
+
+
+.masterclass{
+    
+	display: flex;
+    
+	justify-content: center;
+    
+	align-content: center;
+    
+	padding: 25px;
+}
+
+
+div #test{ 
+    
+	border:#5AB029 3px solid; 
+    
+	padding:10px 40px 40px 40px; 
+    
+	background-color:#E5FCE3;
+    
+	text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+body{
+    background-color:lightcoral;
+    margin: 0px 100px 100px 100px;
+    padding: 10px;
+
+}
+
+caption{
+    text-align: center
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: navy;
+    box-shadow: 0px 0px 9px navy
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+    color: navy;
+    border-style: solid;
+}
+
+table{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 30%;;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+figure img:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+#Submit{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
