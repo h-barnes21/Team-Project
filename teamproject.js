@@ -1,6 +1,4 @@
-
-       
-        
+               
         // pos is position of where the user in the test or which question they're up to
         var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
         // this is a multidimensional array with 4 inner array elements with 5 elements inside them
@@ -8,7 +6,7 @@
         var questions = [
             ["Are you abusive?", "Yes", "No", "Only when I am drunk", "B"],
             ["How often are dogs fed?", "Once a month", "Once a week", "Twice a day", "C"],
-            ["Do you have a fenced backyard?", "Yes", "No", "A"],
+            ["Do you have a fenced backyard?", "Yes", "No", "I'm homeless", "A"],
             ["Dogs can not eat which of these?", "Chicken", "Pasta", "Chocolate", "C"]
             ];
         // this get function is short for the getElementById function  
@@ -32,17 +30,6 @@
         }
         get("test_status").innerHTML = "Qualification Quiz: Question "+(pos+1)+" of "+questions.length;
         question = questions[pos][0];
-        if(pos == 2){
-            chA = questions[pos][1];
-            chB = questions[pos][2];
-            chC = "";
-            test.innerHTML = "<h3>"+question+"</h3>";
-        // the += appends to the data we started on the line above
-        test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-        test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br><br>";
-        test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
-        }
-        else{
         chA = questions[pos][1];
         chB = questions[pos][2];
         chC = questions[pos][3];
@@ -53,7 +40,6 @@
         test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
         test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
         }
-    }
         function checkAnswer(){
         // use getElementsByName because we have an array which it will loop through
         choices = document.getElementsByName("choices");
@@ -73,19 +59,18 @@
         renderQuestion();
         }
         window.addEventListener("load", renderQuestion, false);
-        masterclass.addEventListener("mouseover", fuction(){dog1.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog1.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog2.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog2.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog3.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog3.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog4.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog4.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog5.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog5.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog6.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog6.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog7.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog7.style.opactiy = 0;});
-        masterclass.addEventListener("mouseover", fuction(){dog8.style.opacity = 1;});
-        masterclass.addEventListener("mouseleave", function(){dog8.style.opactiy = 0;});
+
+function dogHover (element) {
+    let hidden = element.children[0];
+    if(hidden.style.opacity === '1'){
+        hidden.style.opacity = '0';
+    }
+    else{
+        hidden.style.opacity = '1';
+    }
+}
+var hidden = [...document.getElementsByTagName("figure")]
+for(let dog of hidden){
+    dog.addEventListener('mouseover', () => dogHover(dog))
+    dog.addEventListener('mouseleave', () => dogHover(dog))
+}
