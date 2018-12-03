@@ -73,4 +73,5 @@
         renderQuestion();
         }
         window.addEventListener("load", renderQuestion, false);
-        
+        masterclass.addEventListener("mouseover", fuction(){dog1.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog1.style.opactiy = 0;});
