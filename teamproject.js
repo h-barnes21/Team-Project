@@ -75,3 +75,17 @@
         window.addEventListener("load", renderQuestion, false);
         masterclass.addEventListener("mouseover", fuction(){dog1.style.opacity = 1;});
         masterclass.addEventListener("mouseleave", function(){dog1.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog2.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog2.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog3.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog3.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog4.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog4.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog5.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog5.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog6.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog6.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog7.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog7.style.opactiy = 0;});
+        masterclass.addEventListener("mouseover", fuction(){dog8.style.opacity = 1;});
+        masterclass.addEventListener("mouseleave", function(){dog8.style.opactiy = 0;});
