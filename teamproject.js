@@ -69,8 +69,13 @@ function dogHover (element) {
         hidden.style.opacity = '1';
     }
 }
+
 var hidden = [...document.getElementsByTagName("figure")]
 for(let dog of hidden){
     dog.addEventListener('mouseover', () => dogHover(dog))
     dog.addEventListener('mouseleave', () => dogHover(dog))
 }
+
+document.getElementById("xyz").addEventListener("click", function(){
+    alert("Thank you " + String(document.getElementById('name').value + " for your application!"));
+});
